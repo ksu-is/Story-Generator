@@ -1,0 +1,6 @@
+- [ ] Find existing codebase to base my project on
+- [ ] Upload existing codebase to base my project on
+- [ ] Run code and see how it works
+- [ ] Add changes to my README
+- [ ] Create title for website
+- [ ] Create powerpoint slides
