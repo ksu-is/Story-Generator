@@ -2,7 +2,7 @@
 import random
 # list of genres for user to pick
 genres = ['fantasy', 'history', 'action', 'classic']
-print("Which genre would you like?" + genres)
+print("Which genre would you like?", genres)
 # adding intros and phrases for each genre
 intro = ['Once upon a time ', 'Long ago ', 'Wandering through the darkness ', ]
 setting = ['there was a lost kingdom ', 
@@ -27,22 +27,22 @@ action_phrases = ["With a swift motion, he unsheathed his sword and cleaved thro
 
 the_phrases = []
 fantasy_conclusions = ["With a final incantation, the darkness was sealed away, never to return.",
-    "The hero's sacrifice ensured that peace would reign for generations to come.",
-    "As the sun set on the battlefield, the echoes of war faded into memory.",
-    "The realm was restored to its former glory, bathed in the light of a new dawn.",
-    "With the defeat of the tyrant, hope bloomed anew in the hearts of the people."]
+    " The hero's sacrifice ensured that peace would reign for generations to come.",
+    " As the sun set on the battlefield, the echoes of war faded into memory.",
+    " The realm was restored to its former glory, bathed in the light of a new dawn.",
+    " With the defeat of the tyrant, hope bloomed anew in the hearts of the people."]
 
-history_conclusions = ["With the rebel leader captured and their stronghold destroyed, the uprising was quelled once and for all.",
-    "The decisive battle turned the tide of war, securing victory for the victorious army and restoring peace to the land.",
-    "In the aftermath of the siege, the city lay in ruins, a stark reminder of the cost of conflict.",
-    "With the traitor's plot exposed and their allies scattered, the kingdom emerged from the brink of collapse stronger than ever.",
-    "As the dust settled on the battlefield, the fallen were mourned and the survivors looked towards a brighter future."]
+history_conclusions = [" With the rebel leader captured and their stronghold destroyed, the uprising was quelled once and for all.",
+    " The decisive battle turned the tide of war, securing victory for the victorious army and restoring peace to the land.",
+    " In the aftermath of the siege, the city lay in ruins, a stark reminder of the cost of conflict.",
+    " With the traitor's plot exposed and their allies scattered, the kingdom emerged from the brink of collapse stronger than ever.",
+    " As the dust settled on the battlefield, the fallen were mourned and the survivors looked towards a brighter future."]
 
-action_conclusions = ["With the bomb disarmed and the villain apprehended, the city breathed a collective sigh of relief.",
-    "The hero's decisive action saved countless lives and brought an end to the villain's reign of terror.",
-    "As the dust settled, the hero stood victorious, a beacon of hope in a world plagued by darkness.",
-    "With the villain defeated and justice served, peace was restored to the streets once more.",
-    "The hero's bravery and cunning outmatched the villain's schemes, ensuring that evil would never prevail."]
+action_conclusions = [" With the bomb disarmed and the villain apprehended, the city breathed a collective sigh of relief.",
+    " The hero's decisive action saved countless lives and brought an end to the villain's reign of terror.",
+    " As the dust settled, the hero stood victorious, a beacon of hope in a world plagued by darkness.",
+    " With the villain defeated and justice served, peace was restored to the streets once more.",
+    " The hero's bravery and cunning outmatched the villain's schemes, ensuring that evil would never prevail."]
 the_conclusions = []
 # print whichever genre the user selected
 user_genre = input("Enter genre: ")
@@ -57,4 +57,7 @@ else:
     the_conclusions = action_conclusions
 
 # select an item from lists to print story
-print(random.choice(intro)+random.choice(setting) + " "+ random.choice(the_phrases) + random.choice(the_conclusions))
+print(random.choice(intro)+
+      random.choice(setting) + 
+      random.choice(the_phrases) + 
+      random.choice(the_conclusions))
