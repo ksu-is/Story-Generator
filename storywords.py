@@ -3,20 +3,22 @@ import random
 # list of genres for user to pick
 genres = ['fantasy', 'history', 'action', 'classic']
 print("Which genre would you like?" + genres)
-# print whichever genre the user selected
-user_genre = input("Enter genre: ")
-print(user_genre)
-# define lists to start story
-characters = ['one', 'two', 'three']
-print("How many characters would you like?" + characters)
-user_char = input("Enter characters: ")
-print(user_char)
+
 intro = ['Once upon a time ', 'Long ago ', 'Wandering through the darkness ', 'The sun shone and birds were chirping merrily ']
 setting = ['there was a lost kingdom ', 'there was a grand civilization ', 'I crept around looking for light ', 'I was reading my book and sitting against a tree ']
-print("What setting would you like?" + setting)
-user_set = input("Enter setting: ")
-print(user_set)
-climax = ['who needed a hero to restore it']
-end = ['']
+fantasy_phrases = []
+history_phrases = []
+action_phrases = []
+
+the_phrases = []
+# print whichever genre the user selected
+user_genre = input("Enter genre: ")
+if user_genre == "fantasy":
+    the_phrases = fantasy_phrases
+elif user_genre == "history":
+    the_phrases = history_phrases
+else:
+    the_phrases = action_phrases
+
 # select an item from lists to print story
-print(random.choice(intro)+random.choice(setting))
+print(random.choice(intro)+random.choice(setting) + " "+ random.choice(the_phrases))
