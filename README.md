@@ -4,7 +4,7 @@ The application generates stories based on a genre out of the ones provided to t
 -The user will be able to choose to generate a story in any of these genres: fantasy, history, and action.
 ## Instructions
 * Clone the repository to your machine. 
-* In the root menu, right-click and select 'open in integrated terminal'.
+* In the Python file, right-click and select 'run Python file in terminal'.
 * Have fun!
 
 ## Credits
